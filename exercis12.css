@@ -1,0 +1,292 @@
+/*
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Very Dark Blue: hsl(243, 87%, 12%)
+- Desaturated Blue: hsl(238, 22%, 44%)
+
+### Accent
+
+- Bright Blue: hsl(224, 93%, 58%)
+- Moderate Cyan: hsl(170, 45%, 43%)
+
+### Neutral
+
+- Light Grayish Blue: hsl(240, 75%, 98%)
+- Light Gray: hsl(0, 0%, 75%)
+
+## Typography
+
+### Headings, Call-to-actions, Header Navigation
+
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 400, 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400
+*/
+/*
+navbar styles for mobile
+*/
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+nav, .top{
+ width: 90%;
+ margin: 0 auto;
+ margin-top: 35px;
+
+}
+ul{
+align-items: center;
+
+}
+nav, ul{
+ display: flex!important;
+ justify-content: space-between;
+ font-family: 'Raleway', sans-serif;
+
+}
+.logo img,ul{
+ height: 38px;
+}
+
+ul,.logo{
+ flex-basis: 50%;
+}
+
+main{
+ margin-top: 100px;
+}
+.top h1{
+ font-size: 38px;
+ margin: 25px 0px;
+ font-family: 'Raleway', sans-serif;
+}
+input,button{
+ width: 90%;
+ padding: 12px;
+ margin-bottom: 20px;
+ margin-top: 10px;
+}
+button{
+ background-color: hsl(224, 93%, 58%);
+  border: none;
+  box-shadow: 3px 3px 7px hsl(0, 0%, 75%);
+    border-radius: 5px!important;
+}
+
+.center{
+ background-image: url("/exercise12/images/bg-curve-mobile.svg");
+ background-position: top center;
+ background-repeat: no-repeat;
+ background-size: contain;
+ float: left;
+}
+.all{
+  background-color:hsl(240, 75%, 98%);
+  margin-top: 14%;
+}
+
+.middle{
+ margin-top: 0;
+ padding-top: 100px;
+}
+.middle p{
+ width: 90%;
+ margin: 0 auto;
+ margin-top: 25px;
+}
+.un-link{
+ border-bottom:  hsl(170, 45%, 43%) solid 2px;
+ margin-bottom: 100px;
+ color: hsl(170, 45%, 43%);
+ width: 170px;
+ margin: 0 auto;
+ margin-top: 30px;
+}
+.cardd{
+ padding-bottom: 70px;
+}
+.cardd > div{
+  padding: 30px 35px 20px 35px;
+  font-size: 16px;
+  box-shadow: 3px 3px 7px hsl(0, 0%, 75%);
+  width: 380px;
+  background-color: #fff;
+  margin: 0 auto;
+ margin-top: 80px;
+}
+.comma{
+position: relative;
+top: 20px;
+}
+.profile{
+ margin-top: 20px;
+ font-size: 15px;
+}
+.profile img{
+ height: 34px;
+ border-radius: 50%;
+float: left;
+ margin-right: 6px;
+}
+h6{
+ margin: 0;
+ font-family: 'Raleway', sans-serif;
+}
+.profile p{
+ font-size: 12px;
+ color: #a8a1a1;
+ margin: 0;
+}
+.bottom{
+ background-color:  hsl(238, 22%, 44%);
+ padding: 65px 0px;
+  clear: both;
+}
+.bottom-content{
+ width: 85%;
+ margin: auto;
+}
+.bottom input, .bottom button{
+ width: 80%;
+ margin-top: 5px;
+ margin-bottom: 5px;
+ box-shadow: none;
+}
+
+
+.bottom input{
+  border: none;
+}
+.bottom p{
+ margin: 20px 0px;
+}
+footer{
+  padding-right: 10px;
+  padding-left: 40px;
+  padding-bottom: 35px;
+  padding-top: 60px;
+  background-color:  hsl(243, 87%, 12%);
+}
+
+.left img{
+ height: 18px;
+ margin-right: 10px;
+}
+.left > div{
+  margin-bottom: 20px;
+  display: flex;
+}
+.icons{
+ text-align: center;
+}
+.footer-logo{
+ margin-bottom: 25px;
+}
+.centerr{
+ margin-bottom: 30px;
+}
+@media screen and (min-width: 700px){
+ul{
+ flex-basis: 25%;
+ justify-content: space-around;
+}
+.top,.inp-btn, .all{
+ display: flex;
+}
+.image{
+ order: 2;
+}
+
+.top input, .top button{
+ margin: 0;
+}
+
+.top button{
+width: 300px;
+ margin-left: 10px;
+}
+.center{
+ background-image: url("/exercise12/images/bg-curve-desktop.svg");
+ background-position: top center;
+ background-repeat: no-repeat;
+ background-size: auto;
+ float: left;
+ margin-top: 60px;
+}
+.all{
+ padding-top: 50px;
+ margin-top: 8%;
+ 
+}
+.bottom{
+ clear: both;
+ padding-top: 100px;
+}
+.middle{
+ flex-basis: 90%;
+ margin: 0 auto;
+ padding: 0;
+}
+.middle-content{
+ width: 90%;
+ margin: 0 auto;
+}
+.middle p{
+ width: initial;
+}
+.cardd > div, .un-link{
+ margin: 0;
+ margin-top: 20px;
+}
+.bottom-content{
+ display: flex;
+ width: 90%;
+ justify-content: space-between;
+}
+.bottom-content > div{
+ flex-basis: 45%;
+}
+.bottom-content > div:last-child{
+flex-basis: 50%;
+}
+.bottom button{
+ width: 250px;
+}
+.inner-content{
+ display: flex;
+ justify-content: space-between;
+}
+.left > div{
+ margin-bottom: 0;
+}
+.inner-content > div{
+ flex-basis: 20%;
+}
+footer{
+  padding-top: 90px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+}
